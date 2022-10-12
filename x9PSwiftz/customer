@@ -8,8 +8,8 @@ local RenderStepped = game:GetService('RunService').RenderStepped;
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 
-if game.CoreGui:FindFirstChild("Diamond-Hub") then
-    game.CoreGui:FindFirstChild("Diamond-Hub"):Destroy()
+if game.CoreGui:FindFirstChild("GUI-KUB") then
+    game.CoreGui:FindFirstChild("GUI-KUB"):Destroy()
 end
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
@@ -18,7 +18,7 @@ local ScreenGui = Instance.new('ScreenGui');
 ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
-ScreenGui.Name = "Diamond-Hub"
+ScreenGui.Name = "GUI-KUB"
 ScreenGui.Parent = CoreGui;
 
 if not getgenv().ColorUI then
